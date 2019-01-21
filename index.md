@@ -1,37 +1,44 @@
-## 我的第一个Github网页
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>我的第一个Gubhit网页</title>
+<script language="javascript">
+   var today=new Date();
+   var year=today.getFullYear();
+   var month=today.getMonth()+1;
+   var day=today.getDate();
+   var week=today.getDay();
+   switch(week){
+            case 0: week="星期天";break;
+            case 1: week="星期一";break;
+            case 2: week="星期二";break;
+            case 3: week="星期三";break;
+            case 4: week="星期四";break;
+            case 5: week="星期五";break;
+            case 6: week="星期六";break;
+    }
+   document.write("今天是"+year+"年"+month+"月"+day+"日"+week+"<br>");
+   var hour=today.getHours();
+   var minute=today.getMinutes();
+   var second=today.getSeconds();
+   var hm=today.getMilliseconds();
+   document.write("现在是北京时间"+hour+"时"+minute+"分"+second+"秒"+hm+"毫秒");
 
-You can use the [editor on GitHub](https://github.com/wjhjiajia/Myhtml/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wjhjiajia/Myhtml/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+   var now=new Date();
+   var hour=now.getHours()
+   if(hour<6){alert("凌晨好！");}
+   else if(hour<9){alert("早上好！");}
+   else if(hour<12){alert("上午好！");}
+   else if(hour<14){alert("中午好！");}
+   else if(hour<17){alert("下午好！");}
+   else if(hour<19){alert("傍晚好！");}
+   else if(hour<22){alert("晚上好！");}
+   else {alert("夜里好！");}
+</script>
+</head>
+<body>
+<img src=""
+</body>
+</html>
